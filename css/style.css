@@ -1,0 +1,583 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+body h2 {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* ナビゲーションバー */
+.my_name {
+    font-size: 45px;
+    padding: 5px 15px;
+    color: rgb(192, 192, 0);
+}
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.slide {
+    display: flex;
+}
+.menu {
+    margin: auto 10px auto auto;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.menu ul li a {
+    color: rgb(192, 192, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu ul li a:link {
+    color: rgb(192, 192, 0);
+}
+.menu ul li a:visited {
+    color: rgb(192, 192, 0);
+}
+.menu ul li a:hover {
+    color: rgb(192, 192, 0);
+    border-bottom: 4px solid rgb(192, 192, 0);
+    border-top: 4px solid rgb(192, 192, 0);
+    transition: .1s;
+}
+.menu ul li a:active {
+    color: rgb(192, 192, 0);
+}
+
+
+/* portfolio */
+.title {
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    background-image: url('../ttl-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title .title-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    color: white;
+}
+.title .title-name2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
+/* それぞれのトピック名 */
+.topic {
+    font-size: 3rem;
+    padding: 20px 30px 50px 30px;
+    font-weight: bold;
+}
+
+
+/* プロフィール */
+.profile {
+    color: black;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    padding-bottom: 30px;
+}
+.profile-content {
+    text-align: center;
+}
+.pro {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.pro img {
+    width: 40%;
+    margin: auto;
+    border-radius: 70%;
+    border: 5px solid black;
+}
+.profile-text {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 15px 0;
+}
+.profile-text li {
+    margin: 15px;
+    font-size: 19px;
+}
+
+/* スキル */
+.skills {
+    color: black;
+    z-index: -2;
+    padding-bottom: 50px;
+}
+.skills-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.skills-number {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+}
+.skills-number i {
+    display: block;
+    width: 140px;
+    margin: 30px auto;
+}
+.my-big {
+    font-size: 7em;
+}
+.icon-name {
+    font-size: 26px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 15px;
+}
+
+/* サービス */
+.service {
+    padding-bottom: 30px;
+    position: relative;
+    z-index: -2;
+    color: black;
+    text-align: center;
+}
+.service-content {
+    width: 90%;
+    margin: auto;
+}
+.service-number {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-point {
+    width: 30%;
+    margin: 10px 1.6%;
+    padding: 15px;
+    border: 5px solid black;
+}
+
+
+/* ワーク（実績） */
+.works {
+    color: rgb(255, 255, 255);
+    background-image: url(../stone.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 50px;
+}
+.works-content {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.btn-works {
+    font-size: 30px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 30px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+/* フォーム */
+form {
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+form h2 {
+    text-align: center;
+}
+.contact {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.contact p {
+    font-weight: bold;
+}
+.must {
+    width: 50%;
+}
+.content {
+    width: 50%;
+}
+.name {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.address {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+input[name="name"] {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+input[name="mail"] {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+textarea {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 6px;
+    border: 2px solid black;
+}
+.submit {
+    text-align: center;
+    margin: 20px 20px 0;
+    padding: 40px;
+}
+input[type="submit"] {
+    width: 20%;
+    height: auto;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+/* フッター */
+.footer {
+    background: linear-gradient(  rgb(77, 76, 76), rgb(0, 0, 0));
+    text-align: center;
+}
+.footer p {
+    color: white;
+    padding: 20px;
+    margin: auto;
+}
+.icon-twi {
+    background-color: rgb(55, 208, 255);
+    color: white;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+/* レスポンシブ */
+@media (max-width: 1020px) {
+    .service-number {
+        display: block;
+    }
+    .service-point {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .title .title-name {
+        text-align: center;
+        font-size: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 950px) {
+    .btn-menu {
+        display: block;
+        position: fixed;
+        right: 13px;
+        top: 12px;
+        width: 42px;
+        height: 51px;
+        cursor: pointer;
+        z-index: 3;
+        text-align: center;
+    }
+    .btn-menu span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px rgb(192, 192, 0);
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 6px;
+    }
+    .btn-menu span:nth-child(1) {
+        top: 9px;
+    }
+    .btn-menu span:nth-child(2) {
+        top: 18px;
+    }
+    .btn-menu span:nth-child(3) {
+        top: 27px;
+    }
+    .btn-menu.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        border-bottom: solid 3px rgb(255, 255, 255);
+    }
+    .btn-menu.active span:nth-child(2),
+    .btn-menu.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-bottom: solid 3px rgb(255, 255, 255);
+    }
+    nav.menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0, 0.4);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        transform: translateY(-100%);
+        transition: all 0.8s;
+        width: 100%;
+    }
+    nav.menu ul {
+        background: rgb(0, 0, 0, 0.4);
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+    nav.menu ul li {
+        font-size: 1.1em;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px dotted rgb(255, 255, 255);
+        color: white;
+    }
+    nav.menu ul li:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    nav.menu ul li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 1em 0;
+    }
+    .menu ul li a:link {
+        color: rgb(255, 255, 255);
+    }
+    .menu ul li a:visited {
+        color: rgb(255, 255, 255);
+    }
+    .menu ul li a:hover {
+        color: rgb(124, 241, 183);
+        border-bottom: none;
+        border-top: none;
+    }
+    .menu ul li a:active {
+        color: rgb(255, 255, 255);
+    }
+    nav.menu.active {
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .title .title-name2 {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .title .title-name {
+        text-align: center;
+        font-size: 90px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .topic {
+        padding-top: 80px;
+    }
+    
+    .pro {
+        display: block;
+        width: 100%;
+    }
+    .pro img {
+        width: 60%;
+        margin: 10px;
+    }
+    .profile-text {
+        width: 94%;
+        padding: 15px 0;
+    }
+    .profile-text p {
+        margin: 25px;
+    }
+    .service-content {
+        width: 80%;
+        margin: auto;
+    }
+    .service-number {
+        display: block;
+    }
+    .service-point {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .contact {
+        display: block;
+        width: 100%;
+    }
+    .must {
+        width: 100%;
+    }
+    .name {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .address {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .content {
+        width: 80%;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .submit {
+        text-align: center;
+        margin: 0;
+    }
+    input[type="submit"] {
+        width: 40%;
+    }
+    
+    .footer p {
+        font-size: 10px;
+        padding: 20px;
+        margin: auto;
+    }
+    
+}
+@media (max-width: 500px) {
+    .my_name {
+        font-size: 30px;
+    }
+    .title {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 0px;
+    }
+    .title .title-name2 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 200px;
+        padding-bottom: 130px;
+    }
+    .title .title-name {
+        text-align: center;
+        font-size: 60px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    
+    .skills-content {
+        width: 98%;
+        margin: auto;
+    }
+    
+    .btn-works {
+        font-size: 20px;
+        padding: 15px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0);
+        margin: 30px;
+        cursor: pointer;
+        z-index: 0;
+    }
+}
+
+.confimation-form {
+    width: 70%;
+    margin: 50px auto;
+}
+.confimation-form h2 {
+    text-align: center;
+    font-size: 48px;
+}
+.confimation-form table {
+    width: 100%;
+}
+
+
